@@ -10,4 +10,4 @@ import json <br>
 
 You will need a Wolfram dev key to acess this api, https://developer.wolframalpha.com/portal/myapps/index.html, so you create an account, then an app, and then get app id.
 
-Note: **Wolfram api, isnt the best**
+Note: **Wolfram api, isnt the best**. Sometimes it can not work
