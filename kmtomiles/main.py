@@ -1,23 +1,23 @@
 import discord
 from discord.ext import commands
 
-CONST_prefix = '!'
+PREFIX = '!'
+KMTOMI = 0.62137
+MITOKM = 1.60934
 
-bot_TOKEN = "BOT_TOKEN"
+TOKEN = "BOT_TOKEN"
 
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix=CONST_prefix, intents=intents)
+bot = commands.Bot(command_prefix=PREFIX, intents=intents)
 
 @bot.command()
-async def kmtomiles(ctx, arg):
-	await ctx.send(round(0.62137119*float(arg)/1.00, 5))
+async def kmtomiles(ctx, num):
+    await ctx.send(round(KMTOMI*num, 5))
 
 @bot.command()
-async def milestokm(ctx, arg):
-	await ctx.send(round(1.60934*float(arg)/0.9999975145, 5))
+async def milestokm(ctx, num):
+    await ctx.send(round(MITOKM*num/0.9999975145, 5))
 
 
-
-    
-bot.run(bot_TOKEN)
+bot.run(TOKEN)

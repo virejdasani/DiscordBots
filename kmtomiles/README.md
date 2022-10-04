@@ -1,5 +1,5 @@
 # Run bot
 
-To run this bot you have to have python 3.10<br>
-This pip package <code>pip install discord.py</code> <br>
-And have a discord developer bot Token.
+To run this bot you require [python 3.10](https://www.python.org/downloads/) (or higher), the discord.py pip package, and a [discord developer bot token](https://discord.com/developers/applications)
+
+discord.py is installable through the pip command: `pip install discord.py`
