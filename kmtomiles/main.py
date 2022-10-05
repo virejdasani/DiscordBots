@@ -3,7 +3,7 @@ from discord.ext import commands
 
 PREFIX = '!'
 KMTOMI = 0.62137
-MITOKM = 1.60934
+MITOKM = 1.609
 
 TOKEN = "BOT_TOKEN"
 
@@ -17,7 +17,7 @@ async def kmtomiles(ctx, num):
 
 @bot.command()
 async def milestokm(ctx, num):
-    await ctx.send(round(MITOKM*num/0.9999975145, 5))
+    await ctx.send(round(MITOKM*num, 5))
 
 
 bot.run(TOKEN)
